@@ -41,7 +41,7 @@ router.get('/json', function(req, res, next) {
 	var options = {
 	   host: 'm.maoyan.com',
 	   port: 80, 
-	   path: '/movie/list.json?type=hot&offset=0&type=hot&limit=1000'  
+	   path: '/movie/list.json?type=hot&offset=0&type=hot'  
 	};
 
 	// 处理响应的回调函数
