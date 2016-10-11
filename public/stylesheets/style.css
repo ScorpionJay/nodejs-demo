@@ -1,10 +1,13 @@
 body {
-  padding: 50px;
+  padding: 0px 50px;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #eee;
 }
 
 a {
-  color: #00B7FF;
+  color: #fff;
+  text-decoration: none;
 }
 
 ul {
@@ -20,4 +23,5 @@ ul li {
 	color:#fff;
 	flex:1;
 	min-width: 100px;
+	cursor:pointer;
 }
