@@ -6,3 +6,18 @@ body {
 a {
   color: #00B7FF;
 }
+
+ul {
+	background-color:#999;
+	list-style-type:none;
+	display: flex;
+	justify-content: center;
+	line-height: 50px;
+	flex-wrap: wrap;
+}
+
+ul li {
+	color:#fff;
+	flex:1;
+	min-width: 100px;
+}

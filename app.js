@@ -9,6 +9,9 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var test = require('./routes/test');
 
+var gallery = require('./routes/gallery');
+var music = require('./routes/music');
+
 var app = express();
 
 app.set('port',  9000);
@@ -28,6 +31,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/test', test);
+app.use('/gallery', gallery);
+app.use('/music', music);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
