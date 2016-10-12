@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 	//   console.log('we re connected')
 	// });
 	
-	var obj = new User({name:'jayone'})
+	//var obj = new User({name:'jayone'})
 
 	// obj.save()
 

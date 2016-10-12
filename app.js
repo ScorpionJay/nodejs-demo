@@ -14,10 +14,6 @@ var music = require('./routes/music');
 
 var app = express();
 
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://jay:jay@localhost:27017/admin');
-
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 //设置模板的后缀是html
