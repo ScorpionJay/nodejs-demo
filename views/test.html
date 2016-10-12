@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  	<title>test</title>
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+<%- include('head.html'); %>
 	<%- include('nav.html'); %>
     <% data.data.movies.forEach(function(user){ %>
 	   <h1><%= user.nm %></h1>

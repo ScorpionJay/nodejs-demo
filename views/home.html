@@ -1,0 +1,9 @@
+<%- include('head.html'); %>
+
+    <%- include('nav.html'); %>
+    <p><%= title %></p>
+    <% users.forEach(function(user){ %>
+	   <h1><%= user.name %></h1>
+	<% }); %>
+  </body>
+</html>
