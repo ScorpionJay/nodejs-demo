@@ -14,11 +14,16 @@ var music = require('./routes/music');
 
 var app = express();
 
-app.set('port',  9000);
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://jay:jay@localhost:27017/admin');
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+//设置模板的后缀是html
+app.engine('html', require('ejs').renderFile);
+//指定总模板
+app.set('view engine', 'html');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
