@@ -9,11 +9,27 @@ var routes = require('./routes/index');
 var home = require('./routes/home');
 var users = require('./routes/users');
 var test = require('./routes/test');
+var chat = require('./routes/chat');
 
 var gallery = require('./routes/gallery');
 var music = require('./routes/music');
 
-var app = express();
+ var app = express();
+// var http = require('http').Server(app);
+// var io = require('socket.io')(http);
+
+
+// io.on('connection', function(socket){
+//   console.log('a user connected');
+//   socket.broadcast.emit('hi');
+// });
+
+// io.on('connection', function(socket){
+//   socket.on('chat message', function(msg){
+//     console.log('message: ' + msg);
+//    io.emit('chat message', msg);
+//   });
+// });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -36,6 +52,7 @@ app.use('/users', users);
 app.use('/test', test);
 app.use('/gallery', gallery);
 app.use('/music', music);
+app.use('/chat', chat);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
