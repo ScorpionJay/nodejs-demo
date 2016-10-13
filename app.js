@@ -10,6 +10,7 @@ var home = require('./routes/home');
 var users = require('./routes/users');
 var test = require('./routes/test');
 var chat = require('./routes/chat');
+var article = require('./routes/article');
 
 var gallery = require('./routes/gallery');
 var music = require('./routes/music');
@@ -53,6 +54,7 @@ app.use('/test', test);
 app.use('/gallery', gallery);
 app.use('/music', music);
 app.use('/chat', chat);
+app.use('/article', article);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

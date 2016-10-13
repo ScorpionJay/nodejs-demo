@@ -1,0 +1,12 @@
+<%- include('head.html'); %>
+
+    <%- include('nav.html'); %>
+    <p><%= title %></p>
+    <% articles.forEach(function(article){ %>
+     <h1><%= article.title %></h1>
+     <h1><%= article.date2 %></h1>
+     <h1><%- article.content %></h1>
+     <hr>
+  <% }); %>
+  </body>
+</html>
