@@ -1,11 +1,16 @@
 <%- include('head.html'); %>
 	<%- include('nav.html'); %>
-    <% data.data.movies.forEach(function(user){ %>
-	   <h1><%= user.nm %></h1>
-	   <p><%= user.star %></p>
-	   <img src="<%= user.img %>"/>
-	   <hr>
-	<% }); %>
+	<div class="container">
+		<div class="about">
+			<% data.data.movies.forEach(function(user){ %>
+			   <h1><%= user.nm %></h1>
+			   <p><%= user.star %></p>
+			   <img src="<%= user.img %>"/>
+			   <hr>
+			<% }); %>
+		</div>
+	    
+	</div>
   </body>
   <script src="/javascripts/jquery-3.1.1.js"></script>
   <script src="/javascripts/test.js"></script>

@@ -1,8 +1,8 @@
 body {
-  padding: 0 50px;
+  padding: 0;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #eee;
+  background-color: #ddd;
 }
 
 @media (max-width:768px) {
@@ -10,7 +10,7 @@ body {
 	  padding: 0;
 	  margin: 0;
 	  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-	  background-color: #eee;
+	  background-color: #ddd;
 	}
 }
 
@@ -21,7 +21,7 @@ a {
 
 
 /*nav*/
-nav,ul {
+/*nav,ul {
 	padding: 0;
 	margin: 0;
 }
@@ -56,4 +56,107 @@ ul li {
 	min-width: 100px;
 	cursor:pointer;
 	text-align: center;
+}*/
+
+
+
+/*nav*/
+nav {
+	padding: 0 50px;
+	background-color: #333;
+}
+nav ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	display: inline-block;
+	color: #f2f2f2;
+	text-decoration: none;
+	padding: 14px 90px;
+	font-size: 17px;
+	font: small-caps normal 100% Constantia, 'Palatino Linotype', Palatino, Georgia, serif;
+}
+
+nav ul li a:hover {
+	background-color: #555
+}
+
+nav ul .icon {
+	display: none;
+}
+
+@media screen and ( max-width:768px ) {
+	nav {
+		padding: 0px 0px 0px 20px;
+		background-color: #333;
+	}
+	nav li { display: none }
+	nav li.icon { 
+		float: right;
+		display: inline-block;
+	}
+	nav li.icon a { 
+		padding: 14px 20px;
+	}
+	ul.responsive li.icon {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	}
+	ul.responsive li {
+		float: none;
+		display: inline;
+	}
+	ul.responsive li a {
+		display: block;
+		text-align: left;
+	}
+}
+
+/*container*/
+.container {
+	padding: 20px;
+}
+
+
+/*about*/
+.about {
+	background-color: #fff;
+    padding: 10px 50px;
+    margin: 0 20%;
+}
+.about .tab {
+	font-size: 200%;
+    line-height: 1.2;
+    margin: 1em 0 0;font-family: Raleway, 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 100;
+    color: #4183c4;
+}
+
+.about p {
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.about img {
+	width:300px;
+}
+
+@media screen and ( max-width:768px ) {
+	.about {
+		background-color: #fff;
+	    padding: 2px 10px;
+	    margin: 0 0px;
+	}
+	.about img {
+		width:100%;
+	}
 }

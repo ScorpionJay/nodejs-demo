@@ -1,9 +1,24 @@
 <nav>
-	<ul>
+	<ul id='myTopnav' class="topnav">
 		<li><a href='home'>Home</a></li>
+		<li><a href='article'>Article</a></li>
 		<li><a href='music'>Music</a></li>
 		<li><a href='test'>Movie</a></li>
 		<li><a href='gallery'>Gallery</a></li>
-		<li><a href='chat'>chat</a></li>
+		<li><a href='chat'>Chat</a></li>
+		<li><a href='about'>About</a></li>
+		<li class="icon"><a onclick="myFunction()">&#9776;</a></li>
 	</ul>
 </nav>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
